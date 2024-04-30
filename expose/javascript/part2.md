@@ -31,4 +31,8 @@
 15. The `==` operator does type conversions before doing any operand comparison. The `===` operator checks the types of the operands and returns false if they are of different types. If they are of the same type, it then compares the operands values.
 16. Answer in js file
 17. The result of calling `modifyArray([1,2,3], doSomething)` will be the array `[2,4,6]`. The `doSomething` argument is a function that doubles whatever number is passed in to it. Inside the `modifyArray` function, an empty array `newArr` is created that will store the doubled values. Then a for loop is used to iterate through each value in the `array` parameter and pass the value into the `doSomething` function. Then that value is stored into `newArr`.
-18. 
+18. Answer in js file
+19. 1
+    4
+    3
+    2
