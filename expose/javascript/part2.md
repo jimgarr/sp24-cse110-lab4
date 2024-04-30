@@ -8,4 +8,25 @@
 8. The function returns the `discounted` array which contains the values `[50, 100, 150]`. This is the same scenario as question 4, but with the type of variables being of type `let`. This causes no issues, however, as each variable is called within the appropriate scope. More specifically, `i` and `discountedPrice` are only called within the for loop. Same as quesiton 4, the starting values are reduced based on the discount value which is 0.5. So `[100, 200, 300]` becomes `[50, 100, 150]`.
 9. Line 11 returns an error as `i` is of type of let, so it's only accessible within the for loop. Line 14 is after the for loop and thus returns an error because `i` can't be accessed.
 10. Line 12 prints out `length` which is a `const` variable containing the value 3. `length = prices.length` and the length of prices is 3. Since `const` and `let` have the same scope accessibility and `length` is declared within the same scope as line 12, line 12 has access to it. Line 12 then prints out 3.
-11. Same as question 4 and 8, the function returns an array with the values `[50, 100, 150]`. This time the function doesn't round off the decimals but the overall functionality is the same. Each variable is called within the appropriate scope. More specifically, `i` and `discountedPrice` are only called within the for loop. The starting values are reduced based on the discount value which is 0.5. So `[100, 200, 300]` becomes `[50, 100, 150]`. It also seems possible that `discounted` should cause an error since it is of type `const` and its values changes as it has values pushed into it. However, as long as you are mutating the array and not assigning it an entirely new array, that is allowed. 
+11. Same as question 4 and 8, the function returns an array with the values `[50, 100, 150]`. This time the function doesn't round off the decimals but the overall functionality is the same. Each variable is called within the appropriate scope. More specifically, `i` and `discountedPrice` are only called within the for loop. The starting values are reduced based on the discount value which is 0.5. So `[100, 200, 300]` becomes `[50, 100, 150]`. It also seems possible that `discounted` should cause an error since it is of type `const` and its values changes as it has values pushed into it. However, as long as you are mutating the array and not assigning it an entirely new array, that is allowed.
+12. a) student.name;  
+    b) student["Grad Year"];  
+    c) student.greeting();  
+    d) student["Favorite Teacher"].name;  
+    e) student.courseLoad[0];  
+13. a) '32': In javaScript, the + operation does concatenation if one or more of the operaters is a string.  
+    b) 1: javScript converts string 3 to a number and performs the operation.  
+    c) 3: javScript converts null to 0 since + is a mathematical operation.  
+    d) '3null': Since 3 is a string, the plus operation becomes the string concatenation operation so null is treated as a string.  
+    e) 4: Since 3 is a number, the + operation is treated numerically. True then gets converted to a number, which is 1.  
+    f) 0: Both false and null are treated as numbers, both of which are converted to 0.  
+    g) '3undefined': Since 3 is a string, + becomes the concatenation operation so undefined gets concatenated to 3.  
+    h) NaN: String 3 is treated as a number because of the - operation. Undefined then gets converted to a NaN and 3 - NaN = NaN.  
+14. a) true: String 2 gets converted to number 2.  
+    b) false: Since both are strings, they do not get converted and are instead compared based on lexigraphical order.  
+    c) true: string 2 is converted to number 2 because == allows for type conversion.  
+    d) false: The === operator compares the types of the two operands first and returns false if they are different.  
+    e) false: true is converted to number 1, which is not equal to 2.  
+    f) true: The Boolean conversion converts any numerical value that isn't 0 into true.  
+15. The `==` operator does type conversions before doing any operand comparison. The `===` operator checks the types of the operands and returns false if they are of different types. If they are of the same type, it then compares the operands values.
+16. 
